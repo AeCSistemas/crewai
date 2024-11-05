@@ -1,0 +1,20 @@
+[project]
+name = "orgi_ai"
+version = "0.1.0"
+description = "orgi_ai using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.9,<1.0.0"
+]
+
+[project.scripts]
+orgi_ai = "orgi_ai.main:run"
+run_crew = "orgi_ai.main:run"
+train = "orgi_ai.main:train"
+replay = "orgi_ai.main:replay"
+test = "orgi_ai.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
